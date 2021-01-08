@@ -9,13 +9,6 @@ export default function Home() {
 		img: "/live.jpg",
 	});
 
-	useEffect(() => {
-		if (Math.round(Math.random()) > 0)
-			setDecision({ text: "Live", favicon: "/water.png", img: "/live.jpg" });
-		else
-			setDecision({ text: "Kill", favicon: "/monster.png", img: "/kill.jpg" });
-	}, []);
-
 	return (
 		<div className={styles.container}>
 			<Head>
